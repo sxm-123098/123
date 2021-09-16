@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
 # 项目目录
-project_path = "D:\\python\\mit-bih_ecg_recognition\\"
+project_path = "D:\\medical dataset (include PPG)\\mit-bih_ecg_recognition-master\\"
 # 定义日志目录,必须是启动web应用时指定目录的子目录,建议使用日期时间作为子目录名
 log_dir = project_path + "logs\\" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 model_path = project_path + "ecg_model.h5"
