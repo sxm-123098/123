@@ -175,7 +175,8 @@ def main():
         model.save(filepath=model_path)
 
     # 预测
-    Y_pred = model.predict_classes(X_test)
+    predict = model.predict(X_test)
+    predict = np.argmax(predict, axis=1)
     # 绘制混淆矩阵
     plotHeatMap(Y_test, Y_pred)
 
